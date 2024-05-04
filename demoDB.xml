@@ -1,0 +1,4115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="3.0.0.790" ExportMode="AllReferences, DefaultValues" PISystem="LAPTOP-KG86RAFU" Database="demoDB" Description="" Created="2024-05-04T05:13:24.145385Z" id="f3aecaa2-5d44-472a-adc6-d186213431e8" ParentKey="63da76d1-5077-4c85-bea4-da44d72b32bd" ExportedObject="demoDB" ExportedType="AFDatabase" Identity="Database" PIPersist="145 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{63da76d1-5077-4c85-bea4-da44d72b32bd}\{f3aecaa2-5d44-472a-adc6-d186213431e8}*LAPTOP-KG86RAFU\demoDB">
+  <UOMDatabase>
+    <id>7b0faa35-160d-45ff-83a5-8eff4229515a</id>
+    <Name>UOMDatabase</Name>
+    <UOMGroup>
+      <id>1ee788f0-56ba-4de2-af83-042173b1db0a</id>
+      <Name>Metric</Name>
+      <Description>The Metric group maps units-of-measure to the International System of Units (SI).</Description>
+    </UOMGroup>
+    <UOMGroup>
+      <id>422b774f-28ac-45e0-b68d-ff6bea8a3281</id>
+      <Name>US Customary</Name>
+      <Description>The US Customary group maps units-of-measure to the system of measurements commonly used in the United States.</Description>
+    </UOMGroup>
+    <UOMClass>
+      <id>2e723d0b-b352-42a7-a47a-cf95262597e9</id>
+      <Name>Plane Angle</Name>
+      <Description />
+      <CanonicalUOM>radian</CanonicalUOM>
+      <CanonicalAbbr>rad</CanonicalAbbr>
+      <CanonicalID>440d890c-91a3-454c-b343-e4dba2705699</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+      <Name>Time</Name>
+      <Description />
+      <CanonicalUOM>second</CanonicalUOM>
+      <CanonicalAbbr>s</CanonicalAbbr>
+      <CanonicalID>a9d2db2c-cb7b-4969-b540-ef1448dbb2a7</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>7cd298f5-4c11-4f96-93a8-3c160ef85ebc</id>
+      <Name>Angular Velocity</Name>
+      <Description />
+      <CanonicalUOM>radian per second</CanonicalUOM>
+      <CanonicalAbbr>rad/s</CanonicalAbbr>
+      <CanonicalID>09873b9a-acc6-49c2-bb37-b32a2b645213</CanonicalID>
+      <UOMBaseClass>
+        <id>2e723d0b-b352-42a7-a47a-cf95262597e9</id>
+        <Name>Plane Angle</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+      <Name>Length</Name>
+      <Description />
+      <CanonicalUOM>meter</CanonicalUOM>
+      <CanonicalAbbr>m</CanonicalAbbr>
+      <CanonicalID>984da825-1670-42f1-b9f1-a769cc83b0d4</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>a8c148d9-c553-4385-811a-4a44133c6a1a</id>
+      <Name>Area</Name>
+      <Description />
+      <CanonicalUOM>square meter</CanonicalUOM>
+      <CanonicalAbbr>m2</CanonicalAbbr>
+      <CanonicalID>4c5ef3a1-343b-4045-b18d-96c8afe47112</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>7cbc7a14-404a-4006-bd76-0e71d50e8e12</id>
+      <Name>Computer Storage</Name>
+      <Description />
+      <CanonicalUOM>byte</CanonicalUOM>
+      <CanonicalAbbr>B</CanonicalAbbr>
+      <CanonicalID>bebd65b5-088e-46b3-a74a-71482061454a</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+      <Name>Mass</Name>
+      <Description />
+      <CanonicalUOM>kilogram</CanonicalUOM>
+      <CanonicalAbbr>kg</CanonicalAbbr>
+      <CanonicalID>e102db3a-c19f-41bf-a2d6-3b71926be4b0</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>09b4d43e-1892-4c4c-a4c9-c70c1f26bb95</id>
+      <Name>Density</Name>
+      <Description />
+      <CanonicalUOM>kilogram per cubic meter</CanonicalUOM>
+      <CanonicalAbbr>kg/m3</CanonicalAbbr>
+      <CanonicalID>b7e0e5ff-a4a4-4a91-a1de-3b120ce7f2b7</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>-3</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>df7edd82-73af-4145-bf61-ee35986f1f5c</id>
+      <Name>Dynamic Viscosity</Name>
+      <Description />
+      <CanonicalUOM>pascal second</CanonicalUOM>
+      <CanonicalAbbr>Pa*s</CanonicalAbbr>
+      <CanonicalID>28612522-38ab-4f4c-8d5f-1a867f852967</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>f247a347-9803-4490-86c0-663ffa7f2c50</id>
+      <Name>Electric Current</Name>
+      <Description />
+      <CanonicalUOM>ampere</CanonicalUOM>
+      <CanonicalAbbr>A</CanonicalAbbr>
+      <CanonicalID>865c9f0b-33b4-445a-9183-0c290e74726d</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>bc174185-559d-45b3-aba4-03bc32a48b58</id>
+      <Name>Electric Charge</Name>
+      <Description />
+      <CanonicalUOM>coulomb</CanonicalUOM>
+      <CanonicalAbbr>C</CanonicalAbbr>
+      <CanonicalID>c544d6ab-bdf7-4661-bac4-6e8dddb5fcfb</CanonicalID>
+      <UOMBaseClass>
+        <id>f247a347-9803-4490-86c0-663ffa7f2c50</id>
+        <Name>Electric Current</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>04d07515-0d15-4eb0-a460-ab5d0c4b6af4</id>
+      <Name>Electric Potential</Name>
+      <Description />
+      <CanonicalUOM>volt</CanonicalUOM>
+      <CanonicalAbbr>V</CanonicalAbbr>
+      <CanonicalID>3265e017-9b68-4dac-9c6b-2ad409ec2164</CanonicalID>
+      <UOMBaseClass>
+        <id>f247a347-9803-4490-86c0-663ffa7f2c50</id>
+        <Name>Electric Current</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-3</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>fd7b926b-0638-46e9-8be2-31f15ec51bca</id>
+      <Name>Electric Resistance</Name>
+      <Description />
+      <CanonicalUOM>ohm</CanonicalUOM>
+      <CanonicalAbbr>Ω</CanonicalAbbr>
+      <CanonicalID>73307d3b-01a5-45a9-9816-1de0c02f0c7f</CanonicalID>
+      <UOMBaseClass>
+        <id>f247a347-9803-4490-86c0-663ffa7f2c50</id>
+        <Name>Electric Current</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-3</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>8d15efb1-c345-433f-8919-ba46912b6ee1</id>
+      <Name>Energy</Name>
+      <Description />
+      <CanonicalUOM>joule</CanonicalUOM>
+      <CanonicalAbbr>J</CanonicalAbbr>
+      <CanonicalID>5b19d392-0bcc-4dc2-9e64-558065871b26</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>5f0f341c-0a5c-41c2-8252-f1893147480b</id>
+      <Name>Temperature (Delta)</Name>
+      <Description />
+      <CanonicalUOM>delta kelvin</CanonicalUOM>
+      <CanonicalAbbr>delta K</CanonicalAbbr>
+      <CanonicalID>9a62e5db-8ef8-461f-aff2-df2ba773629e</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>090dc8b1-70c2-4a60-8187-955b4640d2c5</id>
+      <Name>Entropy, Heat Capacity</Name>
+      <Description />
+      <CanonicalUOM>joule per kelvin</CanonicalUOM>
+      <CanonicalAbbr>J/K</CanonicalAbbr>
+      <CanonicalID>f680e2ea-dbfc-4430-a238-12c0ac221172</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>5f0f341c-0a5c-41c2-8252-f1893147480b</id>
+        <Name>Temperature (Delta)</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>4dcecd09-cd2c-4900-9a4c-0d9a86603c87</id>
+      <Name>Force</Name>
+      <Description />
+      <CanonicalUOM>newton</CanonicalUOM>
+      <CanonicalAbbr>N</CanonicalAbbr>
+      <CanonicalID>6184c891-1af4-4244-b908-72c84c1657a6</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>70b48256-7dac-4ba7-8c03-903c2df0492b</id>
+      <Name>Frequency</Name>
+      <Description />
+      <CanonicalUOM>hertz</CanonicalUOM>
+      <CanonicalAbbr>Hz</CanonicalAbbr>
+      <CanonicalID>2af99547-b6ed-4a79-9e6d-ac1026858874</CanonicalID>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>bef0bcc0-6a57-4690-a559-1cd853fb728f</id>
+      <Name>Luminous Intensity</Name>
+      <Description />
+      <CanonicalUOM>candela</CanonicalUOM>
+      <CanonicalAbbr>cd</CanonicalAbbr>
+      <CanonicalID>083662aa-63d1-42b6-b404-082ea8b983da</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>d57dee6b-faa5-4545-bf39-07941b21b29b</id>
+      <Name>Mass Flow Rate</Name>
+      <Description />
+      <CanonicalUOM>kilogram per second</CanonicalUOM>
+      <CanonicalAbbr>kg/s</CanonicalAbbr>
+      <CanonicalID>35697222-7d1f-43a3-bb0b-7376656b84dd</CanonicalID>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>ca756834-b8f2-40f8-b548-91bf7fc06556</id>
+      <Name>Moles</Name>
+      <Description />
+      <CanonicalUOM>mole</CanonicalUOM>
+      <CanonicalAbbr>mol</CanonicalAbbr>
+      <CanonicalID>333e1511-4cd2-442f-be54-772cdb7a557f</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>b519467d-4abe-4f21-b54b-116376a10dfe</id>
+      <Name>Molar Flow Rate</Name>
+      <Description />
+      <CanonicalUOM>mole per second</CanonicalUOM>
+      <CanonicalAbbr>mol/s</CanonicalAbbr>
+      <CanonicalID>50f865bd-b6fb-4100-88e4-e289edc8e7e4</CanonicalID>
+      <UOMBaseClass>
+        <id>ca756834-b8f2-40f8-b548-91bf7fc06556</id>
+        <Name>Moles</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>d9c6c36f-85e0-465b-901a-a2ba56fcf639</id>
+      <Name>Molecular Weight</Name>
+      <Description />
+      <CanonicalUOM>kilogram per mole</CanonicalUOM>
+      <CanonicalAbbr>kg/mol</CanonicalAbbr>
+      <CanonicalID>7ca0ea3c-d02f-4147-80c6-54f73b74b553</CanonicalID>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>ca756834-b8f2-40f8-b548-91bf7fc06556</id>
+        <Name>Moles</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>b3ddad93-0b80-4b52-84a6-106354777b22</id>
+      <Name>Power</Name>
+      <Description />
+      <CanonicalUOM>watt</CanonicalUOM>
+      <CanonicalAbbr>W</CanonicalAbbr>
+      <CanonicalID>6c04c325-de39-41a2-9e6a-829588bf736e</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-3</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>03ef2247-c599-457a-bdec-46503f1a3b76</id>
+      <Name>Pressure</Name>
+      <Description />
+      <CanonicalUOM>pascal</CanonicalUOM>
+      <CanonicalAbbr>Pa</CanonicalAbbr>
+      <CanonicalID>5f49b489-0afb-4e2f-9d12-1fa782dcaf39</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>da828211-781c-4d0d-a3ca-01b6fc04f7de</id>
+      <Name>Quantity</Name>
+      <Description />
+      <CanonicalUOM>count</CanonicalUOM>
+      <CanonicalAbbr>count</CanonicalAbbr>
+      <CanonicalID>1a438afa-4fe4-427b-8839-835fd572c73c</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>d1a0d1bd-c399-42da-9b76-966542504036</id>
+      <Name>Ratio</Name>
+      <Description />
+      <CanonicalUOM>percent</CanonicalUOM>
+      <CanonicalAbbr>%</CanonicalAbbr>
+      <CanonicalID>6102e353-5d44-4646-82d2-bff7b005cc9f</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>fbab136d-c47b-4615-a8f1-6fcd773ba1f6</id>
+      <Name>Specific Energy</Name>
+      <Description />
+      <CanonicalUOM>joule per kilogram</CanonicalUOM>
+      <CanonicalAbbr>J/kg</CanonicalAbbr>
+      <CanonicalID>d22afc88-7052-44b8-bab4-7733dc4df896</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>5181649e-389d-42b6-87b4-ad817ef46865</id>
+      <Name>Specific Entropy, Specific Heat Capacity</Name>
+      <Description />
+      <CanonicalUOM>joule per kilogram kelvin</CanonicalUOM>
+      <CanonicalAbbr>J/(kg K)</CanonicalAbbr>
+      <CanonicalID>a7818470-ed59-4dd0-aab2-ea4cf28659c1</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>2</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>5f0f341c-0a5c-41c2-8252-f1893147480b</id>
+        <Name>Temperature (Delta)</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-2</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>6a62abc9-6c28-45d8-9aaa-9cd4e8f4dce8</id>
+      <Name>Specific Volume</Name>
+      <Description />
+      <CanonicalUOM>cubic meter per kilogram</CanonicalUOM>
+      <CanonicalAbbr>m3/kg</CanonicalAbbr>
+      <CanonicalID>75a805da-dfbe-4bf3-86c0-1a2f9fcf1775</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>3</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>e8051950-e9bf-4390-a040-0875e93085e7</id>
+        <Name>Mass</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>bb258b85-9107-4055-b03c-3abc7f34600c</id>
+      <Name>Speed</Name>
+      <Description />
+      <CanonicalUOM>meter per second</CanonicalUOM>
+      <CanonicalAbbr>m/s</CanonicalAbbr>
+      <CanonicalID>9533041a-62ee-48a4-9ebc-d42a259ccf60</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>1</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>60211ebc-d411-47b2-9f7f-656187539732</id>
+      <Name>Temperature</Name>
+      <Description />
+      <CanonicalUOM>kelvin</CanonicalUOM>
+      <CanonicalAbbr>K</CanonicalAbbr>
+      <CanonicalID>c5533128-fa7f-45fc-b229-6f1be24d6254</CanonicalID>
+    </UOMClass>
+    <UOMClass>
+      <id>bcec4109-5e59-417a-a861-bd1e2bc7cec1</id>
+      <Name>Volume</Name>
+      <Description />
+      <CanonicalUOM>cubic meter</CanonicalUOM>
+      <CanonicalAbbr>m3</CanonicalAbbr>
+      <CanonicalID>1565e60e-4e00-436d-9db3-858710ea8a7b</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>3</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOMClass>
+      <id>3d767ab7-aef4-4414-a271-407bdb12aad3</id>
+      <Name>Volume Flow Rate</Name>
+      <Description />
+      <CanonicalUOM>cubic meter per second</CanonicalUOM>
+      <CanonicalAbbr>m3/s</CanonicalAbbr>
+      <CanonicalID>be428b58-7724-4fe1-9b18-bb62ff42a139</CanonicalID>
+      <UOMBaseClass>
+        <id>36faefa4-f8b1-4e59-b94f-192c7fb231cf</id>
+        <Name>Length</Name>
+        <BasePower>3</BasePower>
+      </UOMBaseClass>
+      <UOMBaseClass>
+        <id>0745a7b7-5267-4a7a-8236-0a42f8c02766</id>
+        <Name>Time</Name>
+        <BasePower>-1</BasePower>
+      </UOMBaseClass>
+    </UOMClass>
+    <UOM>
+      <id>440d890c-91a3-454c-b343-e4dba2705699</id>
+      <Name>radian</Name>
+      <Abbreviation>rad</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="1e45add4-2ab9-4751-9b6f-416431327aad">°</UOMMapping>
+      <Class>Plane Angle</Class>
+    </UOM>
+    <UOM>
+      <id>1e45add4-2ab9-4751-9b6f-416431327aad</id>
+      <Name>degree</Name>
+      <Abbreviation>°</Abbreviation>
+      <Description />
+      <RefFactor>0.0174532925199433</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0174532925199433</Factor>
+      <Offset>0</Offset>
+      <RefUOM>radian</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="440d890c-91a3-454c-b343-e4dba2705699">rad</UOMMapping>
+      <Class>Plane Angle</Class>
+    </UOM>
+    <UOM>
+      <id>263237da-8119-48ea-bd17-7e1c8330102e</id>
+      <Name>revolution</Name>
+      <Abbreviation>r</Abbreviation>
+      <Description />
+      <RefFactor>6.28318530717959</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>6.28318530717959</Factor>
+      <Offset>0</Offset>
+      <RefUOM>radian</RefUOM>
+      <Class>Plane Angle</Class>
+    </UOM>
+    <UOM>
+      <id>a9d2db2c-cb7b-4969-b540-ef1448dbb2a7</id>
+      <Name>second</Name>
+      <Abbreviation>s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>a746510e-aab5-46fd-8f65-55d5a8d187a5</id>
+      <Name>minute</Name>
+      <Abbreviation>min</Abbreviation>
+      <Description />
+      <RefFactor>60</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>60</Factor>
+      <Offset>0</Offset>
+      <RefUOM>second</RefUOM>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>d8811772-10de-49c9-94b8-cb6c464bc14c</id>
+      <Name>hour</Name>
+      <Abbreviation>h</Abbreviation>
+      <Description />
+      <RefFactor>60</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3600</Factor>
+      <Offset>0</Offset>
+      <RefUOM>minute</RefUOM>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>8588c9ff-14b4-4df3-8f16-bf57b96320b9</id>
+      <Name>day</Name>
+      <Abbreviation>d</Abbreviation>
+      <Description />
+      <RefFactor>24</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>86400</Factor>
+      <Offset>0</Offset>
+      <RefUOM>hour</RefUOM>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>e7ff7b6a-bb79-4cab-9f7f-704a52041968</id>
+      <Name>month</Name>
+      <Abbreviation>month</Abbreviation>
+      <Description />
+      <RefFactor>30.4166666666667</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>2628000.0000000028</Factor>
+      <Offset>0</Offset>
+      <RefUOM>day</RefUOM>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>b85c7869-e120-4379-8d9e-3b8caefbd623</id>
+      <Name>week</Name>
+      <Abbreviation>week</Abbreviation>
+      <Description />
+      <RefFactor>7</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>604800</Factor>
+      <Offset>0</Offset>
+      <RefUOM>day</RefUOM>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>3c492437-3389-41ce-a5fe-1e822dfa848d</id>
+      <Name>year</Name>
+      <Abbreviation>yr</Abbreviation>
+      <Description />
+      <RefFactor>365</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>31536000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>day</RefUOM>
+      <Class>Time</Class>
+    </UOM>
+    <UOM>
+      <id>09873b9a-acc6-49c2-bb37-b32a2b645213</id>
+      <Name>radian per second</Name>
+      <Abbreviation>rad/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="9e1275a7-8c09-4573-bcee-b32184e56bee">rpm</UOMMapping>
+      <Class>Angular Velocity</Class>
+    </UOM>
+    <UOM>
+      <id>9e1275a7-8c09-4573-bcee-b32184e56bee</id>
+      <Name>revolution per minute</Name>
+      <Abbreviation>rpm</Abbreviation>
+      <Description />
+      <RefFactor>0.10471975511966</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.10471975511966</Factor>
+      <Offset>0</Offset>
+      <RefUOM>radian per second</RefUOM>
+      <Class>Angular Velocity</Class>
+    </UOM>
+    <UOM>
+      <id>984da825-1670-42f1-b9f1-a769cc83b0d4</id>
+      <Name>meter</Name>
+      <Abbreviation>m</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="d30a4131-9d50-4892-8dfd-2a041ee8eafc">yd</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>7ad4f646-0487-4fa4-befc-0fb355cb515b</id>
+      <Name>centimeter</Name>
+      <Abbreviation>cm</Abbreviation>
+      <Description />
+      <RefFactor>0.01</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.01</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="4b4f8a64-4b19-4379-85ea-a788e39f05ba">in</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>4b4f8a64-4b19-4379-85ea-a788e39f05ba</id>
+      <Name>inch</Name>
+      <Abbreviation>in</Abbreviation>
+      <Description />
+      <RefFactor>0.0254</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0254</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="7ad4f646-0487-4fa4-befc-0fb355cb515b">cm</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>23e1db62-3429-43b1-a571-a5e3a1d997e9</id>
+      <Name>foot</Name>
+      <Abbreviation>ft</Abbreviation>
+      <Description />
+      <RefFactor>12</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.30479999999999996</Factor>
+      <Offset>0</Offset>
+      <RefUOM>inch</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="984da825-1670-42f1-b9f1-a769cc83b0d4">m</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>e68c045e-179a-42b4-b6a8-89bf86f6fd7f</id>
+      <Name>International nautical mile</Name>
+      <Abbreviation>nmi</Abbreviation>
+      <Description />
+      <RefFactor>1852</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1852</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter</RefUOM>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>ec8c2023-999d-4b61-876f-1cfe4075cd94</id>
+      <Name>kilometer</Name>
+      <Abbreviation>km</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a2be399c-1586-4cfe-8d1d-297cd47b3a61">mi</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>a2be399c-1586-4cfe-8d1d-297cd47b3a61</id>
+      <Name>mile</Name>
+      <Abbreviation>mi</Abbreviation>
+      <Description />
+      <RefFactor>63360</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1609.3439999999998</Factor>
+      <Offset>0</Offset>
+      <RefUOM>inch</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="ec8c2023-999d-4b61-876f-1cfe4075cd94">km</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>af7ea568-09c5-44a8-a498-62ffbae40cf6</id>
+      <Name>millimeter</Name>
+      <Abbreviation>mm</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="f488ebc1-df55-4fbb-8b20-a6402ce6a7be">sxi</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>f488ebc1-df55-4fbb-8b20-a6402ce6a7be</id>
+      <Name>sixteenth of an inch</Name>
+      <Abbreviation>sxi</Abbreviation>
+      <Description />
+      <RefFactor>0.0625</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0015875</Factor>
+      <Offset>0</Offset>
+      <RefUOM>inch</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="af7ea568-09c5-44a8-a498-62ffbae40cf6">mm</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>d30a4131-9d50-4892-8dfd-2a041ee8eafc</id>
+      <Name>yard</Name>
+      <Abbreviation>yd</Abbreviation>
+      <Description />
+      <RefFactor>36</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.9144</Factor>
+      <Offset>0</Offset>
+      <RefUOM>inch</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="984da825-1670-42f1-b9f1-a769cc83b0d4">m</UOMMapping>
+      <Class>Length</Class>
+    </UOM>
+    <UOM>
+      <id>4c5ef3a1-343b-4045-b18d-96c8afe47112</id>
+      <Name>square meter</Name>
+      <Abbreviation>m2</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="9c8c4806-b252-4c0b-a93d-994dc5b3749a">yd2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>ba348574-88ad-4ec7-ab3c-14a9b746ce35</id>
+      <Name>square inch</Name>
+      <Abbreviation>in2</Abbreviation>
+      <Description />
+      <RefFactor>0.00064516</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.00064516</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="97455eba-b388-4f42-895d-b49be83cba8c">cm2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>4b42a7c2-3cd1-49ed-9a2d-4376d2c60d8a</id>
+      <Name>square foot</Name>
+      <Abbreviation>ft2</Abbreviation>
+      <Description />
+      <RefFactor>144</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.092903039999999992</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square inch</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="4c5ef3a1-343b-4045-b18d-96c8afe47112">m2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>b745d7bc-1f4b-4b2b-9049-55e471e990af</id>
+      <Name>acre</Name>
+      <Abbreviation>acre</Abbreviation>
+      <Description />
+      <RefFactor>43560</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4046.8564223999997</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square foot</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="c9f20971-679a-4206-af62-9b8c5da5c377">ha</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>c9f20971-679a-4206-af62-9b8c5da5c377</id>
+      <Name>hectare</Name>
+      <Abbreviation>ha</Abbreviation>
+      <Description />
+      <RefFactor>10000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>10000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="b745d7bc-1f4b-4b2b-9049-55e471e990af">acre</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>97455eba-b388-4f42-895d-b49be83cba8c</id>
+      <Name>square centimeter</Name>
+      <Abbreviation>cm2</Abbreviation>
+      <Description />
+      <RefFactor>0.0001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="ba348574-88ad-4ec7-ab3c-14a9b746ce35">in2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>eeb1c979-d82b-4796-8ff6-4aa9b25e7a10</id>
+      <Name>square kilometer</Name>
+      <Abbreviation>km2</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="74699496-b17b-4798-b108-12d299fb666a">mi2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>74699496-b17b-4798-b108-12d299fb666a</id>
+      <Name>square mile</Name>
+      <Abbreviation>mi2</Abbreviation>
+      <Description />
+      <RefFactor>27878400</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>2589988.1103359996</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square foot</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="eeb1c979-d82b-4796-8ff6-4aa9b25e7a10">km2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>04d15f9c-543a-4efc-848f-2dec970a0799</id>
+      <Name>square millimeter</Name>
+      <Abbreviation>mm2</Abbreviation>
+      <Description />
+      <RefFactor>1E-06</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-06</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="ba348574-88ad-4ec7-ab3c-14a9b746ce35">in2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>9c8c4806-b252-4c0b-a93d-994dc5b3749a</id>
+      <Name>square yard</Name>
+      <Abbreviation>yd2</Abbreviation>
+      <Description />
+      <RefFactor>9</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.83612735999999988</Factor>
+      <Offset>0</Offset>
+      <RefUOM>square foot</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="4c5ef3a1-343b-4045-b18d-96c8afe47112">m2</UOMMapping>
+      <Class>Area</Class>
+    </UOM>
+    <UOM>
+      <id>bebd65b5-088e-46b3-a74a-71482061454a</id>
+      <Name>byte</Name>
+      <Abbreviation>B</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>67c55cfa-dbed-46a6-b86c-170cbeaf761f</id>
+      <Name>kilobyte</Name>
+      <Abbreviation>kB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>byte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>d30ee728-e4fd-4c94-af24-59074d26633c</id>
+      <Name>megabyte</Name>
+      <Abbreviation>MB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilobyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>df3d1539-a88f-42f1-8264-7ed6e79e928b</id>
+      <Name>gigabyte</Name>
+      <Abbreviation>GB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>megabyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>ac774eb8-22c0-4afb-84c6-578eef317a3a</id>
+      <Name>terabyte</Name>
+      <Abbreviation>TB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>gigabyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>df51898e-a71e-46df-8b41-98e4ba0c63bb</id>
+      <Name>petabyte</Name>
+      <Abbreviation>PB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E+15</Factor>
+      <Offset>0</Offset>
+      <RefUOM>terabyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>cf72ae86-403e-4cb0-bb67-0ce38fb815b8</id>
+      <Name>exabyte</Name>
+      <Abbreviation>EB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E+18</Factor>
+      <Offset>0</Offset>
+      <RefUOM>petabyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>a1910265-a006-4192-b0ed-28a42c4b8d7a</id>
+      <Name>kibibyte</Name>
+      <Abbreviation>KiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1024</Factor>
+      <Offset>0</Offset>
+      <RefUOM>byte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>87ae965e-8827-4724-8449-79178f9e724a</id>
+      <Name>mebibyte</Name>
+      <Abbreviation>MiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1048576</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kibibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>bcb35a8d-602c-49f1-84b9-a9d3cd0a9eb0</id>
+      <Name>gibibyte</Name>
+      <Abbreviation>GiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1073741824</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mebibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>16cb6bec-b137-458d-a174-ee8503ef0546</id>
+      <Name>tebibyte</Name>
+      <Abbreviation>TiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1099511627776</Factor>
+      <Offset>0</Offset>
+      <RefUOM>gibibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>a203d4cb-b1da-4c11-8728-4a573aa33470</id>
+      <Name>pebibyte</Name>
+      <Abbreviation>PiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1125899906842624</Factor>
+      <Offset>0</Offset>
+      <RefUOM>tebibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>2ed8fb1b-704c-433d-9a38-3b75e6560874</id>
+      <Name>exbibyte</Name>
+      <Abbreviation>EiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1.152921504606847E+18</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pebibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>082176eb-2643-4884-905c-c2c3da8d822c</id>
+      <Name>zebibyte</Name>
+      <Abbreviation>ZiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1.1805916207174113E+21</Factor>
+      <Offset>0</Offset>
+      <RefUOM>exbibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>1a26242f-b361-477b-8f66-5b635a80eb5a</id>
+      <Name>yobibyte</Name>
+      <Abbreviation>YiB</Abbreviation>
+      <Description />
+      <RefFactor>1024</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1.2089258196146292E+24</Factor>
+      <Offset>0</Offset>
+      <RefUOM>zebibyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>c62a4c0c-fc30-464b-9ff9-c012674ed318</id>
+      <Name>zettabyte</Name>
+      <Abbreviation>ZB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E+21</Factor>
+      <Offset>0</Offset>
+      <RefUOM>exabyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>5571e6ce-3695-4ece-b3ad-078cc79c1781</id>
+      <Name>yottabyte</Name>
+      <Abbreviation>YB</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E+24</Factor>
+      <Offset>0</Offset>
+      <RefUOM>zettabyte</RefUOM>
+      <Class>Computer Storage</Class>
+    </UOM>
+    <UOM>
+      <id>e102db3a-c19f-41bf-a2d6-3b71926be4b0</id>
+      <Name>kilogram</Name>
+      <Abbreviation>kg</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="0fead3ec-3fa4-4a50-9d28-303df9c57c83">lb</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>3d42556f-f986-4483-831f-6fdcf68432c4</id>
+      <Name>gram</Name>
+      <Abbreviation>g</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="5df09607-0055-4bcf-aae4-5a20df7ce3f1">oz</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>0fead3ec-3fa4-4a50-9d28-303df9c57c83</id>
+      <Name>pound</Name>
+      <Abbreviation>lb</Abbreviation>
+      <Description />
+      <RefFactor>0.45359237</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.45359237</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="e102db3a-c19f-41bf-a2d6-3b71926be4b0">kg</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>12dfb456-de78-44b1-ab2c-dbbc539c7e0e</id>
+      <Name>long ton</Name>
+      <Abbreviation>lton</Abbreviation>
+      <Description />
+      <RefFactor>2240</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1016.0469088000001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="a91e0c96-38ff-4737-a573-0a5d33557a2e">t</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>3059ae64-c2d6-4294-8750-e66cbbdbc76a</id>
+      <Name>milligram</Name>
+      <Abbreviation>mg</Abbreviation>
+      <Description />
+      <RefFactor>1E-06</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-06</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="5df09607-0055-4bcf-aae4-5a20df7ce3f1">oz</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>79566379-4629-45ab-9e53-f0105b6587b6</id>
+      <Name>million pound</Name>
+      <Abbreviation>MM lb</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>453592.37</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="a91e0c96-38ff-4737-a573-0a5d33557a2e">t</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>5df09607-0055-4bcf-aae4-5a20df7ce3f1</id>
+      <Name>ounce</Name>
+      <Abbreviation>oz</Abbreviation>
+      <Description />
+      <RefFactor>0.0625</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.028349523125</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="3d42556f-f986-4483-831f-6fdcf68432c4">g</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>f2d1588f-873e-4e5e-81fc-8e8521f8a7e0</id>
+      <Name>short ton</Name>
+      <Abbreviation>ston</Abbreviation>
+      <Description />
+      <RefFactor>2000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>907.18474</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="a91e0c96-38ff-4737-a573-0a5d33557a2e">t</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>1817278a-6520-4afa-a330-5c20d953198c</id>
+      <Name>thousand pound</Name>
+      <Abbreviation>klb</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>453.59237</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="a91e0c96-38ff-4737-a573-0a5d33557a2e">t</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>fbf57419-b123-4185-b098-562aad195cbf</id>
+      <Name>ton</Name>
+      <Abbreviation>ton</Abbreviation>
+      <Description />
+      <RefFactor>2000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>907.18474</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="a91e0c96-38ff-4737-a573-0a5d33557a2e">t</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>a91e0c96-38ff-4737-a573-0a5d33557a2e</id>
+      <Name>tonne</Name>
+      <Abbreviation>t</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="fbf57419-b123-4185-b098-562aad195cbf">ton</UOMMapping>
+      <Class>Mass</Class>
+    </UOM>
+    <UOM>
+      <id>b7e0e5ff-a4a4-4a91-a1de-3b120ce7f2b7</id>
+      <Name>kilogram per cubic meter</Name>
+      <Abbreviation>kg/m3</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="a7e058dc-7144-4a0e-8176-70d797f7388e">lb/ft3</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>9af0a795-8f07-45f0-8216-c2752fe07755</id>
+      <Name>gram per liter</Name>
+      <Abbreviation>g/L</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="aea71258-973e-46a0-bacf-d7442bbf3912">lb/US gal</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>f2231af8-64f5-4292-9fb7-8fa1a1fb16c3</id>
+      <Name>kilogram per liter</Name>
+      <Abbreviation>kg/L</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="aea71258-973e-46a0-bacf-d7442bbf3912">lb/US gal</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>2b785ec6-3344-4de4-b829-8e66a6516b27</id>
+      <Name>pound per barrel</Name>
+      <Abbreviation>lb/bbl</Abbreviation>
+      <Description />
+      <RefFactor>2.85301017421182</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>2.85301017421182</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per cubic meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="b7e0e5ff-a4a4-4a91-a1de-3b120ce7f2b7">kg/m3</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>a7e058dc-7144-4a0e-8176-70d797f7388e</id>
+      <Name>pound per cubic foot</Name>
+      <Abbreviation>lb/ft3</Abbreviation>
+      <Description />
+      <RefFactor>16.0184633739601</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>16.0184633739601</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per cubic meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="b7e0e5ff-a4a4-4a91-a1de-3b120ce7f2b7">kg/m3</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>aea71258-973e-46a0-bacf-d7442bbf3912</id>
+      <Name>pound per US gallon</Name>
+      <Abbreviation>lb/US gal</Abbreviation>
+      <Description />
+      <RefFactor>119.826427316897</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>119.826427316897</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per cubic meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="f2231af8-64f5-4292-9fb7-8fa1a1fb16c3">kg/L</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>5ed85056-2093-45ac-8234-c273c9bb2331</id>
+      <Name>tonne per cubic meter</Name>
+      <Abbreviation>t/m3</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a7e058dc-7144-4a0e-8176-70d797f7388e">lb/ft3</UOMMapping>
+      <Class>Density</Class>
+    </UOM>
+    <UOM>
+      <id>28612522-38ab-4f4c-8d5f-1a867f852967</id>
+      <Name>pascal second</Name>
+      <Abbreviation>Pa*s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="ce7675dd-771b-46b2-b1e2-5cba5cde0bfc">P</UOMMapping>
+      <Class>Dynamic Viscosity</Class>
+    </UOM>
+    <UOM>
+      <id>ce7675dd-771b-46b2-b1e2-5cba5cde0bfc</id>
+      <Name>poise</Name>
+      <Abbreviation>P</Abbreviation>
+      <Description />
+      <RefFactor>0.1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="28612522-38ab-4f4c-8d5f-1a867f852967">Pa*s</UOMMapping>
+      <Class>Dynamic Viscosity</Class>
+    </UOM>
+    <UOM>
+      <id>865c9f0b-33b4-445a-9183-0c290e74726d</id>
+      <Name>ampere</Name>
+      <Abbreviation>A</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Electric Current</Class>
+    </UOM>
+    <UOM>
+      <id>3bda92a2-c6e8-446a-ba73-bf955c0ea460</id>
+      <Name>milliampere</Name>
+      <Abbreviation>mA</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>ampere</RefUOM>
+      <Class>Electric Current</Class>
+    </UOM>
+    <UOM>
+      <id>c544d6ab-bdf7-4661-bac4-6e8dddb5fcfb</id>
+      <Name>coulomb</Name>
+      <Abbreviation>C</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Electric Charge</Class>
+    </UOM>
+    <UOM>
+      <id>86f27e94-644b-4d49-a1a5-ded9253903a4</id>
+      <Name>Ampere hour</Name>
+      <Abbreviation>Ah</Abbreviation>
+      <Description />
+      <RefFactor>3600</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3600</Factor>
+      <Offset>0</Offset>
+      <RefUOM>coulomb</RefUOM>
+      <Class>Electric Charge</Class>
+    </UOM>
+    <UOM>
+      <id>3265e017-9b68-4dac-9c6b-2ad409ec2164</id>
+      <Name>volt</Name>
+      <Abbreviation>V</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Electric Potential</Class>
+    </UOM>
+    <UOM>
+      <id>c1415acc-a1c3-4241-87d3-cbac630bf937</id>
+      <Name>kilovolt</Name>
+      <Abbreviation>kV</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>volt</RefUOM>
+      <Class>Electric Potential</Class>
+    </UOM>
+    <UOM>
+      <id>c82d9c79-6627-4750-a8ae-b9b1a5445244</id>
+      <Name>megavolt</Name>
+      <Abbreviation>MV</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>volt</RefUOM>
+      <Class>Electric Potential</Class>
+    </UOM>
+    <UOM>
+      <id>cf384bfd-a428-403b-9ce9-1009248bc6a9</id>
+      <Name>millivolt</Name>
+      <Abbreviation>mV</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>volt</RefUOM>
+      <Class>Electric Potential</Class>
+    </UOM>
+    <UOM>
+      <id>73307d3b-01a5-45a9-9816-1de0c02f0c7f</id>
+      <Name>ohm</Name>
+      <Abbreviation>Ω</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Electric Resistance</Class>
+    </UOM>
+    <UOM>
+      <id>5b19d392-0bcc-4dc2-9e64-558065871b26</id>
+      <Name>joule</Name>
+      <Abbreviation>J</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="060b785b-22c5-4013-be8f-effff58b1213">Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>060b785b-22c5-4013-be8f-effff58b1213</id>
+      <Name>British thermal unit</Name>
+      <Abbreviation>Btu</Abbreviation>
+      <Description />
+      <RefFactor>1055.05585262</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1055.05585262</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="62b154f9-6e8e-4b66-af8e-e8e5a2ed3ef3">cal</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>62b154f9-6e8e-4b66-af8e-e8e5a2ed3ef3</id>
+      <Name>calorie</Name>
+      <Abbreviation>cal</Abbreviation>
+      <Description />
+      <RefFactor>4.1868</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4.1868</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="060b785b-22c5-4013-be8f-effff58b1213">Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>48b7ba55-2bb3-45fe-8805-c8fd6a6eb188</id>
+      <Name>gigajoule</Name>
+      <Abbreviation>GJ</Abbreviation>
+      <Description />
+      <RefFactor>1000000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="bdad0bd5-4ee2-4634-a03f-61aea3734198">MM Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>ee5a85da-3f5f-4c3b-89ef-f793eb6d6457</id>
+      <Name>gigawatt hour</Name>
+      <Abbreviation>GWh</Abbreviation>
+      <Description />
+      <RefFactor>3600000000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3600000000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>5372e905-a220-4e1b-a0ca-fa5d570fb472</id>
+      <Name>kilocalorie</Name>
+      <Abbreviation>kcal</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4186.8</Factor>
+      <Offset>0</Offset>
+      <RefUOM>calorie</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="bdad0bd5-4ee2-4634-a03f-61aea3734198">MM Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>36b90a5b-5efa-4bf9-955a-0f393d780c9b</id>
+      <Name>kilojoule</Name>
+      <Abbreviation>kJ</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="060b785b-22c5-4013-be8f-effff58b1213">Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>ff27da67-2939-4182-9610-850c5d4f7ac4</id>
+      <Name>kilowatt hour</Name>
+      <Abbreviation>kWh</Abbreviation>
+      <Description />
+      <RefFactor>3600000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3600000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>9f40a185-9aae-4310-9ea7-5eb2a6d38b88</id>
+      <Name>megajoule</Name>
+      <Abbreviation>MJ</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="bdad0bd5-4ee2-4634-a03f-61aea3734198">MM Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>a2ed37b4-48b1-49f4-802e-35b5c14c7596</id>
+      <Name>megawatt hour</Name>
+      <Abbreviation>MWh</Abbreviation>
+      <Description />
+      <RefFactor>3600000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3600000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>bdad0bd5-4ee2-4634-a03f-61aea3734198</id>
+      <Name>million British thermal unit</Name>
+      <Abbreviation>MM Btu</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1055055852.62</Factor>
+      <Offset>0</Offset>
+      <RefUOM>British thermal unit</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="54378ba5-5bae-4b7c-9ce9-4be62ad88707">MMcal</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>54378ba5-5bae-4b7c-9ce9-4be62ad88707</id>
+      <Name>million calorie</Name>
+      <Abbreviation>MMcal</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4186800</Factor>
+      <Offset>0</Offset>
+      <RefUOM>calorie</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="bdad0bd5-4ee2-4634-a03f-61aea3734198">MM Btu</UOMMapping>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>4f8bad12-4efe-44ce-82cb-1021d642267b</id>
+      <Name>watt hour</Name>
+      <Abbreviation>Wh</Abbreviation>
+      <Description />
+      <RefFactor>3600</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3600</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>3ee26732-bd88-411e-ad48-a9263ca03e84</id>
+      <Name>watt second</Name>
+      <Abbreviation>Ws</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule</RefUOM>
+      <Class>Energy</Class>
+    </UOM>
+    <UOM>
+      <id>9a62e5db-8ef8-461f-aff2-df2ba773629e</id>
+      <Name>delta kelvin</Name>
+      <Abbreviation>delta K</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="f17cb3ef-4f4a-46da-95f0-f9c18cda1e53">delta °R</UOMMapping>
+      <Class>Temperature (Delta)</Class>
+    </UOM>
+    <UOM>
+      <id>97afed08-239a-4488-91a8-0700eac05737</id>
+      <Name>delta degree Celsius</Name>
+      <Abbreviation>delta °C</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>delta kelvin</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a35b7f6d-b415-4b8a-971c-466beddbca5b">delta °F</UOMMapping>
+      <Class>Temperature (Delta)</Class>
+    </UOM>
+    <UOM>
+      <id>a35b7f6d-b415-4b8a-971c-466beddbca5b</id>
+      <Name>delta degree Fahrenheit</Name>
+      <Abbreviation>delta °F</Abbreviation>
+      <Description />
+      <RefFactor>0.555555555555556</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.555555555555556</Factor>
+      <Offset>0</Offset>
+      <RefUOM>delta degree Celsius</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="97afed08-239a-4488-91a8-0700eac05737">delta °C</UOMMapping>
+      <Class>Temperature (Delta)</Class>
+    </UOM>
+    <UOM>
+      <id>f17cb3ef-4f4a-46da-95f0-f9c18cda1e53</id>
+      <Name>delta degree Rankine</Name>
+      <Abbreviation>delta °R</Abbreviation>
+      <Description />
+      <RefFactor>0.555555555555556</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.555555555555556</Factor>
+      <Offset>0</Offset>
+      <RefUOM>delta degree Celsius</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="9a62e5db-8ef8-461f-aff2-df2ba773629e">delta K</UOMMapping>
+      <Class>Temperature (Delta)</Class>
+    </UOM>
+    <UOM>
+      <id>f680e2ea-dbfc-4430-a238-12c0ac221172</id>
+      <Name>joule per kelvin</Name>
+      <Abbreviation>J/K</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="89c7f85c-09fc-4c3a-9674-64eb95e08471">Btu/°F</UOMMapping>
+      <Class>Entropy, Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>89c7f85c-09fc-4c3a-9674-64eb95e08471</id>
+      <Name>British thermal unit per degree Fahrenheit</Name>
+      <Abbreviation>Btu/°F</Abbreviation>
+      <Description />
+      <RefFactor>1899.100534716</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1899.100534716</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kelvin</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="f680e2ea-dbfc-4430-a238-12c0ac221172">J/K</UOMMapping>
+      <Class>Entropy, Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>37b607db-19f6-40aa-a5b7-61b9ca07ec0d</id>
+      <Name>British thermal unit per degree Rankine</Name>
+      <Abbreviation>Btu/°R</Abbreviation>
+      <Description />
+      <RefFactor>1899.100534716</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1899.100534716</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kelvin</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="8f97948a-7c49-466e-8fec-76660a5971c9">kJ/K</UOMMapping>
+      <Class>Entropy, Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>8f97948a-7c49-466e-8fec-76660a5971c9</id>
+      <Name>kilojoule per kelvin</Name>
+      <Abbreviation>kJ/K</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kelvin</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="37b607db-19f6-40aa-a5b7-61b9ca07ec0d">Btu/°R</UOMMapping>
+      <Class>Entropy, Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>6184c891-1af4-4244-b908-72c84c1657a6</id>
+      <Name>newton</Name>
+      <Abbreviation>N</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="a8a7b90a-f60c-4006-9a1d-8ba5ff0b171b">lbf</UOMMapping>
+      <Class>Force</Class>
+    </UOM>
+    <UOM>
+      <id>af5f9f79-6b30-4e02-9498-e6908c4b24c9</id>
+      <Name>dyne</Name>
+      <Abbreviation>dyne</Abbreviation>
+      <Description />
+      <RefFactor>1E-05</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-05</Factor>
+      <Offset>0</Offset>
+      <RefUOM>newton</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a8a7b90a-f60c-4006-9a1d-8ba5ff0b171b">lbf</UOMMapping>
+      <Class>Force</Class>
+    </UOM>
+    <UOM>
+      <id>b1e828d3-f76d-47f0-bc81-f900577778f1</id>
+      <Name>kilogram-force</Name>
+      <Abbreviation>kgf</Abbreviation>
+      <Description />
+      <RefFactor>9.80665</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>9.80665</Factor>
+      <Offset>0</Offset>
+      <RefUOM>newton</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a8a7b90a-f60c-4006-9a1d-8ba5ff0b171b">lbf</UOMMapping>
+      <Class>Force</Class>
+    </UOM>
+    <UOM>
+      <id>a8a7b90a-f60c-4006-9a1d-8ba5ff0b171b</id>
+      <Name>pound-force</Name>
+      <Abbreviation>lbf</Abbreviation>
+      <Description />
+      <RefFactor>4.44822161526</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4.44822161526</Factor>
+      <Offset>0</Offset>
+      <RefUOM>newton</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="b1e828d3-f76d-47f0-bc81-f900577778f1">kgf</UOMMapping>
+      <Class>Force</Class>
+    </UOM>
+    <UOM>
+      <id>2af99547-b6ed-4a79-9e6d-ac1026858874</id>
+      <Name>hertz</Name>
+      <Abbreviation>Hz</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Frequency</Class>
+    </UOM>
+    <UOM>
+      <id>083662aa-63d1-42b6-b404-082ea8b983da</id>
+      <Name>candela</Name>
+      <Abbreviation>cd</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Luminous Intensity</Class>
+    </UOM>
+    <UOM>
+      <id>35697222-7d1f-43a3-bb0b-7376656b84dd</id>
+      <Name>kilogram per second</Name>
+      <Abbreviation>kg/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="d689e679-116b-45a3-92a7-25f09f0221f5">lb/s</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>b8793942-7ee7-417b-a755-7e0bf8062815</id>
+      <Name>gram per second</Name>
+      <Abbreviation>g/s</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="d689e679-116b-45a3-92a7-25f09f0221f5">lb/s</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>d689e679-116b-45a3-92a7-25f09f0221f5</id>
+      <Name>pound per second</Name>
+      <Abbreviation>lb/s</Abbreviation>
+      <Description />
+      <RefFactor>0.45359237</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.45359237</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="35697222-7d1f-43a3-bb0b-7376656b84dd">kg/s</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>671887a6-a654-449f-ac2e-dd7d10858a82</id>
+      <Name>long ton per day</Name>
+      <Abbreviation>lton/d</Abbreviation>
+      <Description />
+      <RefFactor>0.0259259259259259</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.011759802185185174</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="1b294731-8864-448b-9d8f-3f9246661c8c">t/d</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>8130a220-62af-467d-87b4-8746214aee6a</id>
+      <Name>million pound per day</Name>
+      <Abbreviation>MMlb/d</Abbreviation>
+      <Description />
+      <RefFactor>11.5740740740741</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>5.2499116898148266</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="1b294731-8864-448b-9d8f-3f9246661c8c">t/d</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>44271c06-1b1c-4441-a822-258535f7983f</id>
+      <Name>short ton per day</Name>
+      <Abbreviation>ston/d</Abbreviation>
+      <Description />
+      <RefFactor>0.0231481481481481</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.010499823379629607</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="1b294731-8864-448b-9d8f-3f9246661c8c">t/d</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>3a390e83-15ef-4a2f-9331-a74bee40002f</id>
+      <Name>thousand pound per day</Name>
+      <Abbreviation>klb/d</Abbreviation>
+      <Description />
+      <RefFactor>0.0115740740740741</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0052499116898148263</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pound per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="1b294731-8864-448b-9d8f-3f9246661c8c">t/d</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>1b294731-8864-448b-9d8f-3f9246661c8c</id>
+      <Name>tonne per day</Name>
+      <Abbreviation>t/d</Abbreviation>
+      <Description />
+      <RefFactor>0.0115740740740741</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0115740740740741</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="671887a6-a654-449f-ac2e-dd7d10858a82">lton/d</UOMMapping>
+      <Class>Mass Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>333e1511-4cd2-442f-be54-772cdb7a557f</id>
+      <Name>mole</Name>
+      <Abbreviation>mol</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="Metric" id="ad091346-4dd4-4e75-b234-9dd0c772d2fb">gmol</UOMMapping>
+      <Class>Moles</Class>
+    </UOM>
+    <UOM>
+      <id>ad091346-4dd4-4e75-b234-9dd0c772d2fb</id>
+      <Name>gram mole</Name>
+      <Abbreviation>gmol</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mole</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="333e1511-4cd2-442f-be54-772cdb7a557f">mol</UOMMapping>
+      <Class>Moles</Class>
+    </UOM>
+    <UOM>
+      <id>415441ca-d365-4c3a-9382-8e2bd1827901</id>
+      <Name>kilogram mole</Name>
+      <Abbreviation>kmol</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mole</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="61eecbe1-c4c0-40f3-bbc7-be2fcf35e264">lbmol</UOMMapping>
+      <Class>Moles</Class>
+    </UOM>
+    <UOM>
+      <id>61eecbe1-c4c0-40f3-bbc7-be2fcf35e264</id>
+      <Name>pound mole</Name>
+      <Abbreviation>lbmol</Abbreviation>
+      <Description />
+      <RefFactor>453.59237</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>453.59237</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mole</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="415441ca-d365-4c3a-9382-8e2bd1827901">kmol</UOMMapping>
+      <Class>Moles</Class>
+    </UOM>
+    <UOM>
+      <id>50f865bd-b6fb-4100-88e4-e289edc8e7e4</id>
+      <Name>mole per second</Name>
+      <Abbreviation>mol/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="Metric" id="d8e119de-11d3-4d89-8292-e660f075cd30">gmol/s</UOMMapping>
+      <Class>Molar Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>d8e119de-11d3-4d89-8292-e660f075cd30</id>
+      <Name>gram mole per second</Name>
+      <Abbreviation>gmol/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mole per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="50f865bd-b6fb-4100-88e4-e289edc8e7e4">mol/s</UOMMapping>
+      <Class>Molar Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>f6a33016-c35d-4deb-b4bc-46b5e3a94f48</id>
+      <Name>kilogram mole per second</Name>
+      <Abbreviation>kmol/s</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mole per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="cebf6bb9-3f87-4623-be40-042fd5cf5678">lbmol/s</UOMMapping>
+      <Class>Molar Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>cebf6bb9-3f87-4623-be40-042fd5cf5678</id>
+      <Name>pound mole per second</Name>
+      <Abbreviation>lbmol/s</Abbreviation>
+      <Description />
+      <RefFactor>453.59237</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>453.59237</Factor>
+      <Offset>0</Offset>
+      <RefUOM>mole per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="f6a33016-c35d-4deb-b4bc-46b5e3a94f48">kmol/s</UOMMapping>
+      <Class>Molar Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>7ca0ea3c-d02f-4147-80c6-54f73b74b553</id>
+      <Name>kilogram per mole</Name>
+      <Abbreviation>kg/mol</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="9dd5e137-f17b-4f33-9ec4-7860766bb9a3">lb/lbmol</UOMMapping>
+      <Class>Molecular Weight</Class>
+    </UOM>
+    <UOM>
+      <id>81b8b7f3-6e4a-4c85-9d6d-21a89bfbc130</id>
+      <Name>kilogram per kilogram mole</Name>
+      <Abbreviation>kg/kmol</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per mole</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="9dd5e137-f17b-4f33-9ec4-7860766bb9a3">lb/lbmol</UOMMapping>
+      <Class>Molecular Weight</Class>
+    </UOM>
+    <UOM>
+      <id>19664268-abe7-4b07-a6c4-30055da18c7f</id>
+      <Name>gram per gram mole</Name>
+      <Abbreviation>g/gmol</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per kilogram mole</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="9dd5e137-f17b-4f33-9ec4-7860766bb9a3">lb/lbmol</UOMMapping>
+      <Class>Molecular Weight</Class>
+    </UOM>
+    <UOM>
+      <id>9dd5e137-f17b-4f33-9ec4-7860766bb9a3</id>
+      <Name>pound per pound mole</Name>
+      <Abbreviation>lb/lbmol</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>kilogram per kilogram mole</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="7ca0ea3c-d02f-4147-80c6-54f73b74b553">kg/mol</UOMMapping>
+      <Class>Molecular Weight</Class>
+    </UOM>
+    <UOM>
+      <id>6c04c325-de39-41a2-9e6a-829588bf736e</id>
+      <Name>watt</Name>
+      <Abbreviation>W</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>f3c4ae27-5218-489e-a69f-625b26e88212</id>
+      <Name>British thermal unit per hour</Name>
+      <Abbreviation>Btu/h</Abbreviation>
+      <Description />
+      <RefFactor>0.29307107017222</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.29307107017222</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="29e13c1a-7c10-4109-b741-cdec616778f0">cal/s</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>29e13c1a-7c10-4109-b741-cdec616778f0</id>
+      <Name>calorie per second</Name>
+      <Abbreviation>cal/s</Abbreviation>
+      <Description />
+      <RefFactor>4.1868</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4.1868</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="f3c4ae27-5218-489e-a69f-625b26e88212">Btu/h</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>c3422de0-2869-4c24-b117-b32fd8513424</id>
+      <Name>gigawatt</Name>
+      <Abbreviation>GW</Abbreviation>
+      <Description />
+      <RefFactor>1000000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>53a1c84f-8bb7-4ea3-8631-282c09d87ea9</id>
+      <Name>horsepower</Name>
+      <Abbreviation>hp</Abbreviation>
+      <Description />
+      <RefFactor>745.699871582</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>745.699871582</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>201cb54e-bd72-4e04-97a0-29b0e6819cc3</id>
+      <Name>joule per second</Name>
+      <Abbreviation>J/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="f3c4ae27-5218-489e-a69f-625b26e88212">Btu/h</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>673bb5be-a0b3-47a4-9005-3280c6263881</id>
+      <Name>kilowatt</Name>
+      <Abbreviation>kW</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>07779308-4e80-42c0-a70b-e26d793c8f07</id>
+      <Name>megajoule per hour</Name>
+      <Abbreviation>MJ/h</Abbreviation>
+      <Description />
+      <RefFactor>277.777777777778</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>277.777777777778</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="6e19d336-ab41-49fa-8703-a59fd1e4aaf4">MM Btu/h</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>48f6c8a1-087e-4a5a-8238-a2be518148ff</id>
+      <Name>megawatt</Name>
+      <Abbreviation>MW</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>925b8f73-0081-4835-8c15-fb61b854c71c</id>
+      <Name>million British thermal unit per day</Name>
+      <Abbreviation>MM Btu/d</Abbreviation>
+      <Description />
+      <RefFactor>41666.6666666667</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>12211.294590509176</Factor>
+      <Offset>0</Offset>
+      <RefUOM>British thermal unit per hour</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="07779308-4e80-42c0-a70b-e26d793c8f07">MJ/h</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>6e19d336-ab41-49fa-8703-a59fd1e4aaf4</id>
+      <Name>million British thermal unit per hour</Name>
+      <Abbreviation>MM Btu/h</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>293071.07017222</Factor>
+      <Offset>0</Offset>
+      <RefUOM>British thermal unit per hour</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="07779308-4e80-42c0-a70b-e26d793c8f07">MJ/h</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>81346b93-c2c3-49d0-ab8a-28d9506d5bbc</id>
+      <Name>million calorie per hour</Name>
+      <Abbreviation>MMcal/h</Abbreviation>
+      <Description />
+      <RefFactor>1163</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1163</Factor>
+      <Offset>0</Offset>
+      <RefUOM>watt</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="6e19d336-ab41-49fa-8703-a59fd1e4aaf4">MM Btu/h</UOMMapping>
+      <Class>Power</Class>
+    </UOM>
+    <UOM>
+      <id>5f49b489-0afb-4e2f-9d12-1fa782dcaf39</id>
+      <Name>pascal</Name>
+      <Abbreviation>Pa</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>dacf284f-7742-4355-b19f-e0014ff49e67</id>
+      <Name>atmosphere</Name>
+      <Abbreviation>atm</Abbreviation>
+      <Description />
+      <RefFactor>101325</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>101325</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>ec28485e-a015-4555-b32d-3da1e94f677f</id>
+      <Name>bar</Name>
+      <Abbreviation>bar</Abbreviation>
+      <Description />
+      <RefFactor>100000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>100000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>4a669445-3d67-4d09-8b6e-1cc318e9a0e3</id>
+      <Name>inches of mercury</Name>
+      <Abbreviation>inHg</Abbreviation>
+      <Description />
+      <RefFactor>3386.38815789</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3386.38815789</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="b023743e-e8ea-44b7-a36a-9a8beb566ddd">mmHg</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>cc5830b7-eb8c-479c-a20c-332735418a16</id>
+      <Name>kilogram-force per square centimeter</Name>
+      <Abbreviation>kgf/cm2</Abbreviation>
+      <Description />
+      <RefFactor>98066.5</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>98066.5</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>0d9763c3-4b71-4c9d-8285-049145837760</id>
+      <Name>kilogram-force per square meter</Name>
+      <Abbreviation>kgf/m2</Abbreviation>
+      <Description />
+      <RefFactor>9.80665</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>9.80665</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>641131a5-0539-4078-967e-45184beb29b3</id>
+      <Name>kilopascal</Name>
+      <Abbreviation>kPa</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>b023743e-e8ea-44b7-a36a-9a8beb566ddd</id>
+      <Name>millimeter of mercury</Name>
+      <Abbreviation>mmHg</Abbreviation>
+      <Description />
+      <RefFactor>133.322368421</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>133.322368421</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="4a669445-3d67-4d09-8b6e-1cc318e9a0e3">inHg</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>4e4427cd-fa40-4731-9ebb-b357652b91a6</id>
+      <Name>newton per square meter</Name>
+      <Abbreviation>N/m2</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="43f9baa2-a108-4665-bff4-21a77c2c9b56">psi</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>43f9baa2-a108-4665-bff4-21a77c2c9b56</id>
+      <Name>pound-force per square inch</Name>
+      <Abbreviation>psi</Abbreviation>
+      <Description />
+      <RefFactor>6894.75729316836</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>6894.75729316836</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="cc5830b7-eb8c-479c-a20c-332735418a16">kgf/cm2</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>1d33d5b9-3310-4ffe-8124-e3c4535f7f1d</id>
+      <Name>pound-force per square inch (customary)</Name>
+      <Abbreviation>psia</Abbreviation>
+      <Description />
+      <RefFactor>6894.75729316836</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>6894.75729316836</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="cc5830b7-eb8c-479c-a20c-332735418a16">kgf/cm2</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>9631cb75-12b8-4791-b230-894a1c16e44f</id>
+      <Name>torr</Name>
+      <Abbreviation>torr</Abbreviation>
+      <Description />
+      <RefFactor>133.322368421</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>133.322368421</Factor>
+      <Offset>0</Offset>
+      <RefUOM>pascal</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="4a669445-3d67-4d09-8b6e-1cc318e9a0e3">inHg</UOMMapping>
+      <Class>Pressure</Class>
+    </UOM>
+    <UOM>
+      <id>1a438afa-4fe4-427b-8839-835fd572c73c</id>
+      <Name>count</Name>
+      <Abbreviation>count</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Quantity</Class>
+    </UOM>
+    <UOM>
+      <id>6102e353-5d44-4646-82d2-bff7b005cc9f</id>
+      <Name>percent</Name>
+      <Abbreviation>%</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Class>Ratio</Class>
+    </UOM>
+    <UOM>
+      <id>28133609-465e-4e91-8830-c776b2458eef</id>
+      <Name>parts per billion</Name>
+      <Abbreviation>ppb</Abbreviation>
+      <Description />
+      <RefFactor>1E-07</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-07</Factor>
+      <Offset>0</Offset>
+      <RefUOM>percent</RefUOM>
+      <Class>Ratio</Class>
+    </UOM>
+    <UOM>
+      <id>3da6dc48-f819-4424-a6dd-debeac95be92</id>
+      <Name>parts per million</Name>
+      <Abbreviation>ppm</Abbreviation>
+      <Description />
+      <RefFactor>0.0001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>percent</RefUOM>
+      <Class>Ratio</Class>
+    </UOM>
+    <UOM>
+      <id>d22afc88-7052-44b8-bab4-7733dc4df896</id>
+      <Name>joule per kilogram</Name>
+      <Abbreviation>J/kg</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="5175d4c8-fa21-4b0e-a07e-649cf6a22357">Btu/lb</UOMMapping>
+      <Class>Specific Energy</Class>
+    </UOM>
+    <UOM>
+      <id>5175d4c8-fa21-4b0e-a07e-649cf6a22357</id>
+      <Name>British thermal unit per pound</Name>
+      <Abbreviation>Btu/lb</Abbreviation>
+      <Description />
+      <RefFactor>2326</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>2326</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="e090d2d8-0612-4eaf-9979-4627c1595d8f">kJ/kg</UOMMapping>
+      <Class>Specific Energy</Class>
+    </UOM>
+    <UOM>
+      <id>66c890e5-ffde-4da5-b345-d4db2e41a4a8</id>
+      <Name>joule per gram</Name>
+      <Abbreviation>J/g</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="5175d4c8-fa21-4b0e-a07e-649cf6a22357">Btu/lb</UOMMapping>
+      <Class>Specific Energy</Class>
+    </UOM>
+    <UOM>
+      <id>8b80e877-d117-442f-8a4a-7c0ef4bbc352</id>
+      <Name>kilocalorie per kilogram</Name>
+      <Abbreviation>kcal/kg</Abbreviation>
+      <Description />
+      <RefFactor>4186.8</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4186.8</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="5175d4c8-fa21-4b0e-a07e-649cf6a22357">Btu/lb</UOMMapping>
+      <Class>Specific Energy</Class>
+    </UOM>
+    <UOM>
+      <id>e090d2d8-0612-4eaf-9979-4627c1595d8f</id>
+      <Name>kilojoule per kilogram</Name>
+      <Abbreviation>kJ/kg</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="5175d4c8-fa21-4b0e-a07e-649cf6a22357">Btu/lb</UOMMapping>
+      <Class>Specific Energy</Class>
+    </UOM>
+    <UOM>
+      <id>33fb0673-af18-4c01-b5c3-b613b03f40b9</id>
+      <Name>kilojoule per pound</Name>
+      <Abbreviation>kJ/lb</Abbreviation>
+      <Description />
+      <RefFactor>2204.62262184878</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>2204.62262184878</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram</RefUOM>
+      <Class>Specific Energy</Class>
+    </UOM>
+    <UOM>
+      <id>a7818470-ed59-4dd0-aab2-ea4cf28659c1</id>
+      <Name>joule per kilogram kelvin</Name>
+      <Abbreviation>J/(kg K)</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="951052da-71b6-4e94-bd94-1240064c5409">Btu/(lb °R)</UOMMapping>
+      <Class>Specific Entropy, Specific Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>d8be76d7-c3bc-4612-ba14-b308969c5457</id>
+      <Name>British thermal unit per pound degree Fahrenheit</Name>
+      <Abbreviation>Btu/(lb °F)</Abbreviation>
+      <Description />
+      <RefFactor>4186.8</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4186.8</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram kelvin</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="a7818470-ed59-4dd0-aab2-ea4cf28659c1">J/(kg K)</UOMMapping>
+      <Class>Specific Entropy, Specific Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>951052da-71b6-4e94-bd94-1240064c5409</id>
+      <Name>British thermal unit per pound degree Rankine</Name>
+      <Abbreviation>Btu/(lb °R)</Abbreviation>
+      <Description />
+      <RefFactor>4186.8</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4186.8</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram kelvin</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="456b1652-148a-416c-853b-271ec689bc7c">kJ/(kg K)</UOMMapping>
+      <Class>Specific Entropy, Specific Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>988e817f-e2b8-4213-b4ee-927fd33d4bde</id>
+      <Name>joule per gram kelvin</Name>
+      <Abbreviation>J/(g K)</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram kelvin</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="951052da-71b6-4e94-bd94-1240064c5409">Btu/(lb °R)</UOMMapping>
+      <Class>Specific Entropy, Specific Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>456b1652-148a-416c-853b-271ec689bc7c</id>
+      <Name>kilojoule per kilogram kelvin</Name>
+      <Abbreviation>kJ/(kg K)</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>joule per kilogram kelvin</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="951052da-71b6-4e94-bd94-1240064c5409">Btu/(lb °R)</UOMMapping>
+      <Class>Specific Entropy, Specific Heat Capacity</Class>
+    </UOM>
+    <UOM>
+      <id>75a805da-dfbe-4bf3-86c0-1a2f9fcf1775</id>
+      <Name>cubic meter per kilogram</Name>
+      <Abbreviation>m3/kg</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="6c5b20ee-f603-49b8-aaf3-ed12a2910927">ft3/lb</UOMMapping>
+      <Class>Specific Volume</Class>
+    </UOM>
+    <UOM>
+      <id>9cbd991a-4c00-4352-9ad2-de26a6b99f91</id>
+      <Name>cubic centimeter per gram</Name>
+      <Abbreviation>cm3/g</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per kilogram</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="6c5b20ee-f603-49b8-aaf3-ed12a2910927">ft3/lb</UOMMapping>
+      <Class>Specific Volume</Class>
+    </UOM>
+    <UOM>
+      <id>6c5b20ee-f603-49b8-aaf3-ed12a2910927</id>
+      <Name>cubic foot per pound</Name>
+      <Abbreviation>ft3/lb</Abbreviation>
+      <Description />
+      <RefFactor>0.0624279605761446</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0624279605761446</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per kilogram</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="75a805da-dfbe-4bf3-86c0-1a2f9fcf1775">m3/kg</UOMMapping>
+      <Class>Specific Volume</Class>
+    </UOM>
+    <UOM>
+      <id>9533041a-62ee-48a4-9ebc-d42a259ccf60</id>
+      <Name>meter per second</Name>
+      <Abbreviation>m/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="85179773-ce17-44d2-9c46-b5bac3554b88">ft/s</UOMMapping>
+      <Class>Speed</Class>
+    </UOM>
+    <UOM>
+      <id>c2cb0b42-1975-4e88-bcb3-53f78e76e3e3</id>
+      <Name>centimeter per second</Name>
+      <Abbreviation>cm/s</Abbreviation>
+      <Description />
+      <RefFactor>0.01</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.01</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="85179773-ce17-44d2-9c46-b5bac3554b88">ft/s</UOMMapping>
+      <Class>Speed</Class>
+    </UOM>
+    <UOM>
+      <id>85179773-ce17-44d2-9c46-b5bac3554b88</id>
+      <Name>foot per second</Name>
+      <Abbreviation>ft/s</Abbreviation>
+      <Description />
+      <RefFactor>0.3048</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.3048</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="9533041a-62ee-48a4-9ebc-d42a259ccf60">m/s</UOMMapping>
+      <Class>Speed</Class>
+    </UOM>
+    <UOM>
+      <id>ad90b747-3ee4-4a8e-a7c1-4613d3282844</id>
+      <Name>International nautical mile per hour</Name>
+      <Abbreviation>nmi/h</Abbreviation>
+      <Description />
+      <RefFactor>0.514444444444444</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.514444444444444</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="96b548ec-7d9e-4ece-b8fa-7ef1905bb473">km/h</UOMMapping>
+      <Class>Speed</Class>
+    </UOM>
+    <UOM>
+      <id>96b548ec-7d9e-4ece-b8fa-7ef1905bb473</id>
+      <Name>kilometer per hour</Name>
+      <Abbreviation>km/h</Abbreviation>
+      <Description />
+      <RefFactor>0.277777777777778</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.277777777777778</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="d0c4cf59-538d-4b35-9113-d40fcb544a79">mi/h</UOMMapping>
+      <Class>Speed</Class>
+    </UOM>
+    <UOM>
+      <id>d0c4cf59-538d-4b35-9113-d40fcb544a79</id>
+      <Name>mile per hour</Name>
+      <Abbreviation>mi/h</Abbreviation>
+      <Description />
+      <RefFactor>0.44704</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.44704</Factor>
+      <Offset>0</Offset>
+      <RefUOM>meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="96b548ec-7d9e-4ece-b8fa-7ef1905bb473">km/h</UOMMapping>
+      <Class>Speed</Class>
+    </UOM>
+    <UOM>
+      <id>c5533128-fa7f-45fc-b229-6f1be24d6254</id>
+      <Name>kelvin</Name>
+      <Abbreviation>K</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="c2aa6526-8dd1-4226-97a2-a7f4145f8271">°R</UOMMapping>
+      <Class>Temperature</Class>
+    </UOM>
+    <UOM>
+      <id>59cff3c8-152f-41e4-8cc7-27b7ef96bd36</id>
+      <Name>degree Celsius</Name>
+      <Abbreviation>°C</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>273.15</RefOffset>
+      <Factor>1</Factor>
+      <Offset>273.15</Offset>
+      <RefUOM>kelvin</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="1dee251b-eea9-4372-9173-67ae975d7d9e">°F</UOMMapping>
+      <Class>Temperature</Class>
+    </UOM>
+    <UOM>
+      <id>1dee251b-eea9-4372-9173-67ae975d7d9e</id>
+      <Name>degree Fahrenheit</Name>
+      <Abbreviation>°F</Abbreviation>
+      <Description />
+      <RefFactor>0.555555555555556</RefFactor>
+      <RefOffset>-17.7777777777778</RefOffset>
+      <Factor>0.555555555555556</Factor>
+      <Offset>255.37222222222218</Offset>
+      <RefUOM>degree Celsius</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="59cff3c8-152f-41e4-8cc7-27b7ef96bd36">°C</UOMMapping>
+      <Class>Temperature</Class>
+    </UOM>
+    <UOM>
+      <id>c2aa6526-8dd1-4226-97a2-a7f4145f8271</id>
+      <Name>degree Rankine</Name>
+      <Abbreviation>°R</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>-459.67</RefOffset>
+      <Factor>0.555555555555556</Factor>
+      <Offset>-2.5579538487363607E-13</Offset>
+      <RefUOM>degree Fahrenheit</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="c5533128-fa7f-45fc-b229-6f1be24d6254">K</UOMMapping>
+      <Class>Temperature</Class>
+    </UOM>
+    <UOM>
+      <id>1565e60e-4e00-436d-9db3-858710ea8a7b</id>
+      <Name>cubic meter</Name>
+      <Abbreviation>m3</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="91376f36-b1e7-4906-8cba-974e7c4c023a">ft3</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>91376f36-b1e7-4906-8cba-974e7c4c023a</id>
+      <Name>cubic foot</Name>
+      <Abbreviation>ft3</Abbreviation>
+      <Description />
+      <RefFactor>0.028316846592</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.028316846592</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="1565e60e-4e00-436d-9db3-858710ea8a7b">m3</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>e7b7cdaf-7f55-4a4a-b476-4d30db7fcbce</id>
+      <Name>acre foot</Name>
+      <Abbreviation>acre ft</Abbreviation>
+      <Description />
+      <RefFactor>43560</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1233.48183754752</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic foot</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="1565e60e-4e00-436d-9db3-858710ea8a7b">m3</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>a6da93ca-58a7-48ee-86f1-6d692d21783c</id>
+      <Name>US gallon</Name>
+      <Abbreviation>US gal</Abbreviation>
+      <Description />
+      <RefFactor>0.003785411784</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.003785411784</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="41a6225b-ba52-4604-a91e-0b5fe3169231">kL</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>79e6d6aa-e9c8-4c6c-a6a1-8c547f263a55</id>
+      <Name>barrel</Name>
+      <Abbreviation>bbl</Abbreviation>
+      <Description />
+      <RefFactor>42</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.158987294928</Factor>
+      <Offset>0</Offset>
+      <RefUOM>US gallon</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="41a6225b-ba52-4604-a91e-0b5fe3169231">kL</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>5a728ad1-94b6-4848-bdef-00107fa20247</id>
+      <Name>cubic centimeter</Name>
+      <Abbreviation>cm3</Abbreviation>
+      <Description />
+      <RefFactor>1E-06</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-06</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="91376f36-b1e7-4906-8cba-974e7c4c023a">ft3</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>53634c71-ec9d-42c9-b4de-dd1d6c6bfec2</id>
+      <Name>Imperial gallon</Name>
+      <Abbreviation>Imp gal</Abbreviation>
+      <Description />
+      <RefFactor>1.20094992550485</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.0045460899999999809</Factor>
+      <Offset>0</Offset>
+      <RefUOM>US gallon</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="41a6225b-ba52-4604-a91e-0b5fe3169231">kL</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>41a6225b-ba52-4604-a91e-0b5fe3169231</id>
+      <Name>kiloliter</Name>
+      <Abbreviation>kL</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a6da93ca-58a7-48ee-86f1-6d692d21783c">US gal</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>d889a253-e706-47ac-9bd4-852411e330c5</id>
+      <Name>liter</Name>
+      <Abbreviation>L</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a6da93ca-58a7-48ee-86f1-6d692d21783c">US gal</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>bdca6c29-032a-4532-8e6b-dd57f3e0e46b</id>
+      <Name>megaliter</Name>
+      <Abbreviation>M L</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="39675bc7-b6bc-4880-b1ff-fb87be4097a3">US Mgal</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>8f9fb68a-cf8e-4f0c-99f0-483a8730f963</id>
+      <Name>milliliter</Name>
+      <Abbreviation>mL</Abbreviation>
+      <Description />
+      <RefFactor>1E-06</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-06</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="a6da93ca-58a7-48ee-86f1-6d692d21783c">US gal</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>60611d72-4f87-4dcc-a515-568f9e79aaf4</id>
+      <Name>million barrel</Name>
+      <Abbreviation>MMbbl</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>158987.29492800002</Factor>
+      <Offset>0</Offset>
+      <RefUOM>barrel</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="bdca6c29-032a-4532-8e6b-dd57f3e0e46b">M L</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>8e2567ee-271f-4865-8ba7-533bb3b6f037</id>
+      <Name>million imperial gallon</Name>
+      <Abbreviation>Imp Mgal</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4546.089999999981</Factor>
+      <Offset>0</Offset>
+      <RefUOM>Imperial gallon</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="39675bc7-b6bc-4880-b1ff-fb87be4097a3">US Mgal</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>39675bc7-b6bc-4880-b1ff-fb87be4097a3</id>
+      <Name>million US gallon</Name>
+      <Abbreviation>US Mgal</Abbreviation>
+      <Description />
+      <RefFactor>1000000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3785.4117840000004</Factor>
+      <Offset>0</Offset>
+      <RefUOM>US gallon</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="bdca6c29-032a-4532-8e6b-dd57f3e0e46b">M L</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>00d7d0aa-1223-4ed0-bc0d-9185b3f90358</id>
+      <Name>thousand barrel</Name>
+      <Abbreviation>kbbl</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>158.987294928</Factor>
+      <Offset>0</Offset>
+      <RefUOM>barrel</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="41a6225b-ba52-4604-a91e-0b5fe3169231">kL</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>3f96ea36-f35e-4945-bd1c-6bae565632eb</id>
+      <Name>thousand cubic meter</Name>
+      <Abbreviation>k m3</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1000</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="91376f36-b1e7-4906-8cba-974e7c4c023a">ft3</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>b548f218-0d80-4d1f-8357-a5dd928b6be9</id>
+      <Name>thousand imperial gallon</Name>
+      <Abbreviation>Imp kgal</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>4.5460899999999809</Factor>
+      <Offset>0</Offset>
+      <RefUOM>Imperial gallon</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="3aff8190-8ebd-4bcb-bfef-92964a8c0d5d">US kgal</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>3aff8190-8ebd-4bcb-bfef-92964a8c0d5d</id>
+      <Name>thousand US gallon</Name>
+      <Abbreviation>US kgal</Abbreviation>
+      <Description />
+      <RefFactor>1000</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>3.7854117840000003</Factor>
+      <Offset>0</Offset>
+      <RefUOM>US gallon</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="bdca6c29-032a-4532-8e6b-dd57f3e0e46b">M L</UOMMapping>
+      <Class>Volume</Class>
+    </UOM>
+    <UOM>
+      <id>be428b58-7724-4fe1-9b18-bb62ff42a139</id>
+      <Name>cubic meter per second</Name>
+      <Abbreviation>m3/s</Abbreviation>
+      <Description />
+      <RefFactor>1</RefFactor>
+      <RefOffset>0</RefOffset>
+      <UOMMapping UOMGroup="US Customary" id="270b8b5c-afb7-4af6-aec2-520f299fd5bd">ft3/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>a1405909-2c35-4dab-8f21-35d1e0057a9c</id>
+      <Name>barrel per day</Name>
+      <Abbreviation>bbl/d</Abbreviation>
+      <Description />
+      <RefFactor>1.84013072833333E-06</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1.84013072833333E-06</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="aeb339d6-1569-4020-a922-694670b02ee5">L/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>1467c476-293c-47b9-ba0f-7f27315f7e0c</id>
+      <Name>cubic centimeter per second</Name>
+      <Abbreviation>cm3/s</Abbreviation>
+      <Description />
+      <RefFactor>1E-06</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>1E-06</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="270b8b5c-afb7-4af6-aec2-520f299fd5bd">ft3/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>270b8b5c-afb7-4af6-aec2-520f299fd5bd</id>
+      <Name>cubic foot per second</Name>
+      <Abbreviation>ft3/s</Abbreviation>
+      <Description />
+      <RefFactor>0.028316846592</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.028316846592</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="be428b58-7724-4fe1-9b18-bb62ff42a139">m3/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>99ee6644-2b21-4fff-a9d3-6e59a1192adc</id>
+      <Name>cubic meter per hour</Name>
+      <Abbreviation>m3/h</Abbreviation>
+      <Description />
+      <RefFactor>0.000277777777777778</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.000277777777777778</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="270b8b5c-afb7-4af6-aec2-520f299fd5bd">ft3/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>a47bbad6-4868-442f-a5b8-fcf70f2e97a4</id>
+      <Name>Imperial gallon per minute</Name>
+      <Abbreviation>Imp gal/min</Abbreviation>
+      <Description />
+      <RefFactor>7.57681666666663E-05</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>7.57681666666663E-05</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="aeb339d6-1569-4020-a922-694670b02ee5">L/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>aeb339d6-1569-4020-a922-694670b02ee5</id>
+      <Name>liter per second</Name>
+      <Abbreviation>L/s</Abbreviation>
+      <Description />
+      <RefFactor>0.001</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>0.001</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="US Customary" id="95d12779-aca6-4de4-be5c-99d97ddcf3f6">US gal/min</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+    <UOM>
+      <id>95d12779-aca6-4de4-be5c-99d97ddcf3f6</id>
+      <Name>US gallon per minute</Name>
+      <Abbreviation>US gal/min</Abbreviation>
+      <Description />
+      <RefFactor>6.30901964E-05</RefFactor>
+      <RefOffset>0</RefOffset>
+      <Factor>6.30901964E-05</Factor>
+      <Offset>0</Offset>
+      <RefUOM>cubic meter per second</RefUOM>
+      <UOMMapping UOMGroup="Metric" id="aeb339d6-1569-4020-a922-694670b02ee5">L/s</UOMMapping>
+      <Class>Volume Flow Rate</Class>
+    </UOM>
+  </UOMDatabase>
+  <AFDatabase>
+    <id>f3aecaa2-5d44-472a-adc6-d186213431e8</id>
+    <Name>demoDB</Name>
+    <Description />
+    <AFAttributeCategory>
+      <id>b23b4b1f-600e-40b3-acbb-d4fc9b745371</id>
+      <Name>Oil</Name>
+      <Description />
+    </AFAttributeCategory>
+    <AFAttributeCategory>
+      <id>0a6f202f-cf4a-48e2-8c31-a2478596a18c</id>
+      <Name>Pressure</Name>
+      <Description />
+    </AFAttributeCategory>
+    <AFAttributeCategory>
+      <id>1d81edec-1f68-40a1-a4d6-938174147301</id>
+      <Name>Stainer</Name>
+      <Description />
+    </AFAttributeCategory>
+    <AFAttributeCategory>
+      <id>93729558-7468-477d-af59-5614fcdac680</id>
+      <Name>Status</Name>
+      <Description />
+    </AFAttributeCategory>
+    <AFAttributeCategory>
+      <id>6a017335-9406-4361-b617-a50d2d52c16d</id>
+      <Name>Temparature</Name>
+      <Description />
+    </AFAttributeCategory>
+    <AFElementCategory>
+      <id>c967c420-0b6a-49dd-b6d2-c06314ce0014</id>
+      <Name>Air Compressor</Name>
+      <Description />
+    </AFElementCategory>
+    <AFElementCategory>
+      <id>d9dacafc-6782-474d-beb9-85523f9cb1e2</id>
+      <Name>Boiler</Name>
+      <Description />
+    </AFElementCategory>
+    <AFElementCategory>
+      <id>eb3bc354-9150-4159-ab62-d39d2eecaba2</id>
+      <Name>Pump</Name>
+      <Description />
+    </AFElementCategory>
+    <AFElementCategory>
+      <id>2cd5ee92-3ead-48c1-90ca-ad8b5a12c678</id>
+      <Name>Service Water Pump</Name>
+      <Description />
+    </AFElementCategory>
+    <AFReferenceType>
+      <id>f3aecaa2-5d44-472a-809b-f2248f21b76b</id>
+      <Name>Composition</Name>
+      <ChildName>IsComposedOf</ChildName>
+      <ParentName>ComposedBy</ParentName>
+      <Strength>Composition</Strength>
+      <AllowedParentElementTemplate />
+      <AllowedChildElementTemplate />
+    </AFReferenceType>
+    <AFReferenceType>
+      <id>f3aecaa2-5d44-472a-876b-0e981a9d9b74</id>
+      <Name>Parent-Child</Name>
+      <ChildName>Child</ChildName>
+      <ParentName>Parent</ParentName>
+      <Strength>Strong</Strength>
+      <AllowedParentElementTemplate />
+      <AllowedChildElementTemplate />
+    </AFReferenceType>
+    <AFReferenceType>
+      <id>f3aecaa2-5d44-472a-b272-67b7064e3aab</id>
+      <Name>Weak Reference</Name>
+      <ChildName>Referenced</ChildName>
+      <ParentName>Referenced by</ParentName>
+      <Strength>Weak</Strength>
+      <AllowedParentElementTemplate />
+      <AllowedChildElementTemplate />
+    </AFReferenceType>
+    <AFElementTemplate>
+      <id>4bf030d7-ff61-4c02-8a17-6395c9426fd4</id>
+      <Name>Air Compressor</Name>
+      <Description>Air Compressor</Description>
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute>Check Oil</DefaultAttribute>
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <AFElementCategoryRef id="c967c420-0b6a-49dd-b6d2-c06314ce0014">Air Compressor</AFElementCategoryRef>
+      <AFAttributeTemplate>
+        <id>2b4fa175-660a-47eb-8561-3030ab5e4b92</id>
+        <Name>Check Oil</Name>
+        <Description>Check Oil</Description>
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM>mL</DefaultUOM>
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+        <AFAttributeCategoryRef id="b23b4b1f-600e-40b3-acbb-d4fc9b745371">Oil</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>1a43bfa3-49eb-422d-9e9b-fd2acb591d9b</id>
+      <Name>Boiler</Name>
+      <Description>Boiler</Description>
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute>Boiler Status</DefaultAttribute>
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <AFElementCategoryRef id="d9dacafc-6782-474d-beb9-85523f9cb1e2">Boiler</AFElementCategoryRef>
+      <AFAttributeTemplate>
+        <id>8d9e4ab4-6ac1-43fa-9f34-ba852413c125</id>
+        <Name>Boiler Pressure</Name>
+        <Description>Boiler Presssure</Description>
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM>Pa</DefaultUOM>
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+        <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <id>de5d2e94-7d87-4fa9-ba9a-5dd5b2a96503</id>
+        <Name>Boiler Status</Name>
+        <Description>Boiler Status</Description>
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM />
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+        <AFAttributeCategoryRef id="93729558-7468-477d-af59-5614fcdac680">Status</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <id>072ac8f8-e7ed-4f84-9677-d048ccb14ef4</id>
+        <Name>Boiler Temparature</Name>
+        <Description>Boiler Temparature</Description>
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM>°C</DefaultUOM>
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+        <AFAttributeCategoryRef id="6a017335-9406-4361-b617-a50d2d52c16d">Temparature</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>fb7822d3-3364-473a-bd7c-4fea75be63bd</id>
+      <Name>CP733</Name>
+      <Description />
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute />
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <AFAttributeTemplate>
+        <id>5066fd28-53c2-4873-8b33-d6417ad63d47</id>
+        <Name>Attribute1</Name>
+        <Description />
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM />
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+      </AFAttributeTemplate>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>bf5d4786-0e6f-4aca-8d21-3a54fe12fd45</id>
+      <Name>FeederTemplate</Name>
+      <Description />
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute />
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <AFAttributeTemplate>
+        <id>003517c2-acbf-41ba-9b18-e5fb04dbd984</id>
+        <Name>City</Name>
+        <Description />
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM />
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>String</Type>
+        <TypeQualifier />
+        <Value type="String"></Value>
+        <DataReference />
+        <ConfigString />
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <id>90574c3a-e8a7-46d7-9835-f5e47d617acc</id>
+        <Name>Power</Name>
+        <Description />
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM />
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Int32</Type>
+        <TypeQualifier />
+        <Value type="Int32">0</Value>
+        <DataReference />
+        <ConfigString />
+      </AFAttributeTemplate>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>359c5331-dad2-4491-a3a0-fd25e1f208d1</id>
+      <Name>Service Water Pumps</Name>
+      <Description>Service Water Pumps</Description>
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute />
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <AFElementCategoryRef id="2cd5ee92-3ead-48c1-90ca-ad8b5a12c678">Service Water Pump</AFElementCategoryRef>
+      <AFAttributeTemplate>
+        <id>0e3ec26f-c62f-4cc3-ae97-0498c0f6a331</id>
+        <Name>Pump Discharge Pressure</Name>
+        <Description>Pump Discharge Pressure</Description>
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM>Pa</DefaultUOM>
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+        <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+      <AFAttributeTemplate>
+        <id>3ebbf189-527a-4dad-97d4-7625c993316b</id>
+        <Name>Pump Suction Stainer</Name>
+        <Description>Pump Suction Stainer</Description>
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM>Pa</DefaultUOM>
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+        <AFAttributeCategoryRef id="1d81edec-1f68-40a1-a4d6-938174147301">Stainer</AFAttributeCategoryRef>
+      </AFAttributeTemplate>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>ae769f3f-81b7-4662-b7e7-2015f5662e9d</id>
+      <Name>Template3</Name>
+      <Description />
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute />
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <AFAttributeTemplate>
+        <id>c935aac3-3b37-4a59-aad4-6e8b127deb03</id>
+        <Name>Attribute1</Name>
+        <Description />
+        <IsHidden>false</IsHidden>
+        <IsManualDataEntry>false</IsManualDataEntry>
+        <IsConfigurationItem>false</IsConfigurationItem>
+        <IsExcluded>false</IsExcluded>
+        <IsIndexed>false</IsIndexed>
+        <Trait />
+        <DefaultUOM />
+        <DisplayDigits>-5</DisplayDigits>
+        <Type>Double</Type>
+        <TypeQualifier />
+        <Value type="Double">0</Value>
+        <DataReference />
+        <ConfigString />
+      </AFAttributeTemplate>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>179e0827-8205-40eb-b948-9910d42dcd41</id>
+      <Name>Template4</Name>
+      <Description />
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>Node</Type>
+      <InstanceType>Model</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute />
+      <NamingPattern />
+      <DefaultInputPort>In</DefaultInputPort>
+      <DefaultOutputPort>Out</DefaultOutputPort>
+      <DefaultUndirectedPort>Measurement</DefaultUndirectedPort>
+      <AFPort>
+        <id>856e16c3-c72c-441c-b416-670647760dab</id>
+        <Name>In</Name>
+        <Description>Source Port</Description>
+        <Type>Input</Type>
+        <MaxConnections>2147483647</MaxConnections>
+        <AllowedElementTypes>Flow, Transfer</AllowedElementTypes>
+        <AllowedElementTemplate />
+      </AFPort>
+      <AFPort>
+        <id>1ecb0b35-c86e-4e22-be18-e6dff544ef6e</id>
+        <Name>Measurement</Name>
+        <Description>Measurement Port</Description>
+        <Type>Undirected</Type>
+        <MaxConnections>2147483647</MaxConnections>
+        <AllowedElementTypes>Measurement</AllowedElementTypes>
+        <AllowedElementTemplate />
+      </AFPort>
+      <AFPort>
+        <id>8cdc6935-f947-42b6-9f98-35392b22a595</id>
+        <Name>Out</Name>
+        <Description>Destination Port</Description>
+        <Type>Output</Type>
+        <MaxConnections>2147483647</MaxConnections>
+        <AllowedElementTypes>Flow, Transfer</AllowedElementTypes>
+        <AllowedElementTemplate />
+      </AFPort>
+    </AFElementTemplate>
+    <AFElementTemplate>
+      <id>21b7f4fe-7613-4619-9964-c4f395548aab</id>
+      <Name>Template5</Name>
+      <Description />
+      <BaseTemplateOnly>false</BaseTemplateOnly>
+      <BaseTemplate />
+      <Type>None</Type>
+      <InstanceType>Element</InstanceType>
+      <AllowElementToExtend>false</AllowElementToExtend>
+      <DefaultAttribute />
+      <NamingPattern />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+    </AFElementTemplate>
+    <AFElement>
+      <id>458b6386-03c6-11ef-bbdc-00155d97b404</id>
+      <Name>Air Compressors</Name>
+      <Description>Air Compressors</Description>
+      <IsAnnotated>false</IsAnnotated>
+      <DefaultAttribute />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <VersionID>458b6387-03c6-11ef-bbdc-00155d97b404</VersionID>
+      <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+      <Comment />
+      <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+      <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+      <AFElement ReferenceType="Parent-Child">
+        <id>5d3e8984-03c6-11ef-bbdc-00155d97b404</id>
+        <Name>Air Compressor1</Name>
+        <Description>Air Compressor</Description>
+        <Template>Air Compressor</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>5d3e8985-03c6-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>767128f1-65cc-5604-3ebd-3025f6c9ff96</id>
+          <Name>Check Oil</Name>
+          <Description>Check Oil</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>mL</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="b23b4b1f-600e-40b3-acbb-d4fc9b745371">Oil</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>6796704a-03c6-11ef-bbdc-00155d97b404</id>
+        <Name>Air Compressor2</Name>
+        <Description>Air Compressor</Description>
+        <Template>Air Compressor</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>6796704b-03c6-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>4cd9d13f-65cc-5604-3ebd-3025f6c9ff96</id>
+          <Name>Check Oil</Name>
+          <Description>Check Oil</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>mL</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="b23b4b1f-600e-40b3-acbb-d4fc9b745371">Oil</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+    </AFElement>
+    <AFElement>
+      <id>a9e698dd-03c5-11ef-bbdc-00155d97b404</id>
+      <Name>Boilers</Name>
+      <Description>Boilers</Description>
+      <IsAnnotated>false</IsAnnotated>
+      <DefaultAttribute />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <VersionID>a9e698de-03c5-11ef-bbdc-00155d97b404</VersionID>
+      <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+      <Comment />
+      <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+      <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+      <AFElement ReferenceType="Parent-Child">
+        <id>bc7ace1d-03c5-11ef-bbdc-00155d97b404</id>
+        <Name>Boiler1</Name>
+        <Description>Boiler</Description>
+        <Template>Boiler</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>bc7ace1e-03c5-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>31e484a9-6904-5215-24e8-ba9079847521</id>
+          <Name>Boiler Pressure</Name>
+          <Description>Boiler Presssure</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>6227e089-7e42-5e46-0146-5dc0ef3ed107</id>
+          <Name>Boiler Status</Name>
+          <Description>Boiler Status</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="93729558-7468-477d-af59-5614fcdac680">Status</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>bb5006e5-e428-5e6b-2dab-d05d9126faf0</id>
+          <Name>Boiler Temparature</Name>
+          <Description>Boiler Temparature</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>°C</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="6a017335-9406-4361-b617-a50d2d52c16d">Temparature</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>bc7ace20-03c5-11ef-bbdc-00155d97b404</id>
+        <Name>Boiler2</Name>
+        <Description>Boiler</Description>
+        <Template>Boiler</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>bc7ace21-03c5-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>31e48494-6904-5215-24e8-ba9079847521</id>
+          <Name>Boiler Pressure</Name>
+          <Description>Boiler Presssure</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>6227e0b4-7e42-5e46-0146-5dc0ef3ed107</id>
+          <Name>Boiler Status</Name>
+          <Description>Boiler Status</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="93729558-7468-477d-af59-5614fcdac680">Status</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>bb5006d8-e428-5e6b-2dab-d05d9126faf0</id>
+          <Name>Boiler Temparature</Name>
+          <Description>Boiler Temparature</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>°C</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="6a017335-9406-4361-b617-a50d2d52c16d">Temparature</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>c54b7d3d-03c5-11ef-bbdc-00155d97b404</id>
+        <Name>Boiler3</Name>
+        <Description>Boiler</Description>
+        <Template>Boiler</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>c54b7d3e-03c5-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>48d53789-6904-5215-24e8-ba9079847521</id>
+          <Name>Boiler Pressure</Name>
+          <Description>Boiler Presssure</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>1b1653a9-7e42-5e46-0146-5dc0ef3ed107</id>
+          <Name>Boiler Status</Name>
+          <Description>Boiler Status</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="93729558-7468-477d-af59-5614fcdac680">Status</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>c261b5c5-e428-5e6b-2dab-d05d9126faf0</id>
+          <Name>Boiler Temparature</Name>
+          <Description>Boiler Temparature</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>°C</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="6a017335-9406-4361-b617-a50d2d52c16d">Temparature</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+    </AFElement>
+    <AFElement>
+      <id>b9b84a4f-0163-11ef-bbdc-00155d97b404</id>
+      <Name>Feeders</Name>
+      <Description />
+      <IsAnnotated>false</IsAnnotated>
+      <DefaultAttribute />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <VersionID>b9b84a50-0163-11ef-bbdc-00155d97b404</VersionID>
+      <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+      <Comment />
+      <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+      <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+      <AFElement ReferenceType="Parent-Child">
+        <id>b9b84a52-0163-11ef-bbdc-00155d97b404</id>
+        <Name>Feeder001</Name>
+        <Description />
+        <Template>FeederTemplate</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>b9b84a53-0163-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>b98d5d90-addc-5055-20c4-e5ee594c6d80</id>
+          <Name>City</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>String</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <Value type="String">London</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+        <AFAttribute>
+          <id>29ef0668-e9c4-5738-23e9-f5f120f6cec8</id>
+          <Name>Power</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Int32</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <Value type="Int32">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>fabdfdfd-0218-11ef-bbdc-00155d97b404</id>
+        <Name>Feeder002</Name>
+        <Description />
+        <IsAnnotated>false</IsAnnotated>
+        <DefaultAttribute />
+        <DefaultInputPort />
+        <DefaultOutputPort />
+        <DefaultUndirectedPort />
+        <VersionID>fabdfdfe-0218-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>085eaf24-5178-47bb-9a43-58d22e345cfc</id>
+          <Name>Altitude</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>true</IsConfigurationItem>
+          <Trait>Altitude</Trait>
+          <DefaultUOM>m</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <UOM>m</UOM>
+          <Value type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+        <AFAttribute>
+          <id>78a7ee7c-9be0-48d7-8387-2413acff3a0b</id>
+          <Name>Attribute1</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <Value type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+        <AFAttribute>
+          <id>525646ef-6050-4bfe-9b3f-d67ecbac95f6</id>
+          <Name>Latitude</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>true</IsConfigurationItem>
+          <Trait>Latitude</Trait>
+          <DefaultUOM>°</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <UOM>°</UOM>
+          <Value type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+        <AFAttribute>
+          <id>7ffeee8e-7030-4eb6-8332-4e49a25151dd</id>
+          <Name>Longitude</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>true</IsConfigurationItem>
+          <Trait>Longitude</Trait>
+          <DefaultUOM>°</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <UOM>°</UOM>
+          <Value type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>e0890249-0219-11ef-bbdc-00155d97b404</id>
+        <Name>Feeder1</Name>
+        <Description />
+        <Template>FeederTemplate</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>e089024a-0219-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>e0bc158b-aea6-5055-20c4-e5ee594c6d80</id>
+          <Name>City</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>String</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <Value type="String">London</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+        <AFAttribute>
+          <id>70de4e73-eabe-5738-23e9-f5f120f6cec8</id>
+          <Name>Power</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Int32</Type>
+          <TypeQualifier />
+          <Value default="true" type="Int32">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>51e7a628-02ed-11ef-bbdc-00155d97b404</id>
+        <Name>Feeder2</Name>
+        <Description />
+        <Template>FeederTemplate</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>51e7a629-02ed-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>51d2b1ea-ae52-5055-20c4-e5ee594c6d80</id>
+          <Name>City</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>String</Type>
+          <TypeQualifier />
+          <Status>Good</Status>
+          <Timestamp>1970-01-01T00:00:00Z</Timestamp>
+          <Value type="String">London</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+        <AFAttribute>
+          <id>c1b0ea12-ea4a-5738-23e9-f5f120f6cec8</id>
+          <Name>Power</Name>
+          <Description />
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM />
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Int32</Type>
+          <TypeQualifier />
+          <Value default="true" type="Int32">0</Value>
+          <DataReference />
+          <ConfigString />
+        </AFAttribute>
+      </AFElement>
+    </AFElement>
+    <AFElement>
+      <id>863ca50f-03c7-11ef-bbdc-00155d97b404</id>
+      <Name>Service Water Pumps</Name>
+      <Description>Service Water Pumps</Description>
+      <IsAnnotated>false</IsAnnotated>
+      <DefaultAttribute />
+      <DefaultInputPort />
+      <DefaultOutputPort />
+      <DefaultUndirectedPort />
+      <VersionID>863ca510-03c7-11ef-bbdc-00155d97b404</VersionID>
+      <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+      <Comment />
+      <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+      <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+      <AFElementCategoryRef id="eb3bc354-9150-4159-ab62-d39d2eecaba2">Pump</AFElementCategoryRef>
+      <AFElement ReferenceType="Parent-Child">
+        <id>a7655f4c-03c7-11ef-bbdc-00155d97b404</id>
+        <Name>Service Water Pump1</Name>
+        <Description>Service Water Pumps</Description>
+        <Template>Service Water Pumps</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>a7655f4d-03c7-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>a95b9d23-c5e8-5d2c-154b-048d9d611735</id>
+          <Name>Pump Discharge Pressure</Name>
+          <Description>Pump Discharge Pressure</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>99deaec5-51bd-5c42-2c08-76309404856f</id>
+          <Name>Pump Suction Stainer</Name>
+          <Description>Pump Suction Stainer</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="1d81edec-1f68-40a1-a4d6-938174147301">Stainer</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+      <AFElement ReferenceType="Parent-Child">
+        <id>b2cf162f-03c7-11ef-bbdc-00155d97b404</id>
+        <Name>Service Water Pump2</Name>
+        <Description>Service Water Pumps</Description>
+        <Template>Service Water Pumps</Template>
+        <IsAnnotated>false</IsAnnotated>
+        <VersionID>b2cf1630-03c7-11ef-bbdc-00155d97b404</VersionID>
+        <Modifier>LAPTOP-KG86RAFU\Goutham</Modifier>
+        <Comment />
+        <EffectiveDate>1970-01-01T00:00:00Z</EffectiveDate>
+        <ObsoleteDate>9999-12-31T23:59:59Z</ObsoleteDate>
+        <AFAttribute>
+          <id>bcf1d440-c5e8-5d2c-154b-048d9d611735</id>
+          <Name>Pump Discharge Pressure</Name>
+          <Description>Pump Discharge Pressure</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="0a6f202f-cf4a-48e2-8c31-a2478596a18c">Pressure</AFAttributeCategoryRef>
+        </AFAttribute>
+        <AFAttribute>
+          <id>8c74e7a6-51bd-5c42-2c08-76309404856f</id>
+          <Name>Pump Suction Stainer</Name>
+          <Description>Pump Suction Stainer</Description>
+          <IsHidden>false</IsHidden>
+          <IsManualDataEntry>false</IsManualDataEntry>
+          <IsConfigurationItem>false</IsConfigurationItem>
+          <IsExcluded>false</IsExcluded>
+          <Trait />
+          <DefaultUOM>Pa</DefaultUOM>
+          <DisplayDigits>-5</DisplayDigits>
+          <Type>Double</Type>
+          <TypeQualifier />
+          <Value default="true" type="Double">0</Value>
+          <DataReference />
+          <ConfigString />
+          <AFAttributeCategoryRef id="1d81edec-1f68-40a1-a4d6-938174147301">Stainer</AFAttributeCategoryRef>
+        </AFAttribute>
+      </AFElement>
+    </AFElement>
+  </AFDatabase>
+</AF>
